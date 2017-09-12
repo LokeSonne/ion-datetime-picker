@@ -1,6 +1,6 @@
 {
-  "name": "ion-datetime-picker",
-  "version": "0.5.2-ionic3-1",
+  "name": "ion-datetime-picker-sn",
+  "version": "0.5.3",
   "description": "Date and/or time picker for awesome ionic framework",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,28 +10,30 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "lint": "tslint --project tsconfig.json",
-    "prepublish": "npm run lint && npm run build"
+    "prepublish": "npm run lint && npm run build",
+    "copy": "cp package.json dist/ && cp README.md dist/",
+    "publish": "cd ./dist"
   },
   "author": "Kate Miháliková <kate@katemihalikova.cz> (https://katemihalikova.cz/)",
   "license": "MIT",
-  "repository": "katemihalikova/ion-datetime-picker",
+  "repository": "lsonne/ion-datetime-picker",
   "peerDependencies": {
-    "ionic-angular": "3.0.1 || 3.1.0 || 3.1.1"
+    "ionic-angular": "^3.6.0"
   },
   "devDependencies": {
-    "@angular/common": "4.0.2",
-    "@angular/compiler": "4.0.2",
-    "@angular/compiler-cli": "4.0.2",
-    "@angular/core": "4.0.2",
-    "@angular/forms": "4.0.2",
-    "@angular/http": "4.0.2",
-    "@angular/platform-browser": "4.0.2",
-    "@angular/platform-browser-dynamic": "4.0.2",
-    "ionic-angular": "3.1.1",
+    "@angular/common": "4.1.3",
+    "@angular/compiler": "4.1.3",
+    "@angular/compiler-cli": "4.1.3",
+    "@angular/core": "4.1.3",
+    "@angular/forms": "4.1.3",
+    "@angular/http": "4.1.3",
+    "@angular/platform-browser": "4.1.3",
+    "@angular/platform-browser-dynamic": "4.1.3",
+    "ionic-angular": "^3.6.0",
     "rimraf": "^2.6.1",
-    "rxjs": "5.1.1",
+    "rxjs": "5.4.0",
     "tslint": "^4.5.1",
     "typescript": "~2.2.1",
-    "zone.js": "^0.8.10"
+    "zone.js": "0.8.12"
   }
 }

@@ -39,7 +39,7 @@ Live demo is available on [Codepen](http://codepen.io/katemihalikova/full/dYvjzP
 1. Use npm to install the new module:
 
     ```bash
-    npm install ion-datetime-picker@ionic3 --save
+    npm install ion-datetime-picker-sn --save
     ```
 
 2. Import the `DatetimePickerModule` into your project:
